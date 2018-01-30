@@ -9,7 +9,7 @@ namespace Agenda
 {
     public class PButton : Button
     {
-        private int qtdeSolicitacoes = 0;
+        private int qtdeSolicitacoes = 0; // A quantidade de solicitação ainda não está sendo usada.
         private string nome = "Adriano Sisdelli Costa";
         private string nomeConjugue = "Tacianne Freire Braz";
 
