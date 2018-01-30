@@ -36,11 +36,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pLabel1 = new Agenda.PLabel();
+            this.pButton5 = new Agenda.PButton();
+            this.pButton4 = new Agenda.PButton();
             this.pButton3 = new Agenda.PButton();
             this.pButton2 = new Agenda.PButton();
             this.pButton1 = new Agenda.PButton();
-            this.pButton4 = new Agenda.PButton();
-            this.pButton5 = new Agenda.PButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +121,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pLabel1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -127,6 +129,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(247, 114);
             this.panel1.TabIndex = 3;
+            // 
+            // pLabel1
+            // 
+            this.pLabel1.AutoSize = true;
+            this.pLabel1.Location = new System.Drawing.Point(81, 13);
+            this.pLabel1.Name = "pLabel1";
+            this.pLabel1.Size = new System.Drawing.Size(55, 13);
+            this.pLabel1.TabIndex = 4;
+            this.pLabel1.Text = "Contagem";
+            // 
+            // pButton5
+            // 
+            this.pButton5.Location = new System.Drawing.Point(32, 148);
+            this.pButton5.Name = "pButton5";
+            this.pButton5.Size = new System.Drawing.Size(106, 23);
+            this.pButton5.TabIndex = 0;
+            this.pButton5.Text = "Consulta Saldo";
+            this.pButton5.UseVisualStyleBackColor = true;
+            // 
+            // pButton4
+            // 
+            this.pButton4.Location = new System.Drawing.Point(32, 119);
+            this.pButton4.Name = "pButton4";
+            this.pButton4.Size = new System.Drawing.Size(106, 23);
+            this.pButton4.TabIndex = 0;
+            this.pButton4.Text = "Consulta CPF";
+            this.pButton4.UseVisualStyleBackColor = true;
             // 
             // pButton3
             // 
@@ -154,24 +183,7 @@
             this.pButton1.TabIndex = 0;
             this.pButton1.Text = "Nova tarefa";
             this.pButton1.UseVisualStyleBackColor = true;
-            // 
-            // pButton4
-            // 
-            this.pButton4.Location = new System.Drawing.Point(32, 119);
-            this.pButton4.Name = "pButton4";
-            this.pButton4.Size = new System.Drawing.Size(106, 23);
-            this.pButton4.TabIndex = 0;
-            this.pButton4.Text = "Consulta CPF";
-            this.pButton4.UseVisualStyleBackColor = true;
-            // 
-            // pButton5
-            // 
-            this.pButton5.Location = new System.Drawing.Point(32, 148);
-            this.pButton5.Name = "pButton5";
-            this.pButton5.Size = new System.Drawing.Size(106, 23);
-            this.pButton5.TabIndex = 0;
-            this.pButton5.Text = "Consulta Saldo";
-            this.pButton5.UseVisualStyleBackColor = true;
+            this.pButton1.Click += new System.EventHandler(this.pButton1_Click);
             // 
             // Inicial
             // 
@@ -187,6 +199,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda - Adriano";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Inicial_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -210,6 +223,7 @@
         private System.Windows.Forms.Panel panel1;
         private PButton pButton5;
         private PButton pButton4;
+        private PLabel pLabel1;
     }
 }
 
