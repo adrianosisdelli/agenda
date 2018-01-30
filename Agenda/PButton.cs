@@ -10,6 +10,7 @@ namespace Agenda
     public class PButton : Button
     {
         private int qtdeSolicitacoes = 0;
+        private string nome = "Adriano Sisdelli Costa";
 
         public void alteraLabel(string novaLabel)
         {
