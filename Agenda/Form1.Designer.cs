@@ -39,12 +39,16 @@
             this.pButton3 = new Agenda.PButton();
             this.pButton2 = new Agenda.PButton();
             this.pButton1 = new Agenda.PButton();
+            this.pButton4 = new Agenda.PButton();
+            this.pButton5 = new Agenda.PButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pButton5);
+            this.groupBox1.Controls.Add(this.pButton4);
             this.groupBox1.Controls.Add(this.pButton3);
             this.groupBox1.Controls.Add(this.pButton2);
             this.groupBox1.Controls.Add(this.pButton1);
@@ -151,6 +155,24 @@
             this.pButton1.Text = "Nova tarefa";
             this.pButton1.UseVisualStyleBackColor = true;
             // 
+            // pButton4
+            // 
+            this.pButton4.Location = new System.Drawing.Point(32, 119);
+            this.pButton4.Name = "pButton4";
+            this.pButton4.Size = new System.Drawing.Size(106, 23);
+            this.pButton4.TabIndex = 0;
+            this.pButton4.Text = "Consulta CPF";
+            this.pButton4.UseVisualStyleBackColor = true;
+            // 
+            // pButton5
+            // 
+            this.pButton5.Location = new System.Drawing.Point(32, 148);
+            this.pButton5.Name = "pButton5";
+            this.pButton5.Size = new System.Drawing.Size(106, 23);
+            this.pButton5.TabIndex = 0;
+            this.pButton5.Text = "Consulta Saldo";
+            this.pButton5.UseVisualStyleBackColor = true;
+            // 
             // Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +208,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private PButton pButton5;
+        private PButton pButton4;
     }
 }
 
