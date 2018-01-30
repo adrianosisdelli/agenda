@@ -11,6 +11,7 @@ namespace Agenda
     {
         private int qtdeSolicitacoes = 0;
         private string nome = "Adriano Sisdelli Costa";
+        private string nomeConjugue = "Tacianne Freire Braz";
 
         public void alteraLabel(string novaLabel)
         {
